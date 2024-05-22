@@ -634,7 +634,7 @@
                             </a>
                         </li>
                         <li x-data="{ languageToggle: false }">
-                            <a href="#" class="w-full flex-row flex items-center h-full justify-between"
+                            <button class="w-full flex-row flex items-center h-full justify-between"
                                 @click.prevent="languageToggle = !languageToggle">
                                 <div class="w-full flex flex-row items-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -650,7 +650,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
-                            </a>
+                            </button>
                             <ul class="py-4 px-2 my-2 w-full flex flex-col space-y-4" x-show="languageToggle"
                                 x-transition x-cloak>
                                 <li><a href="https://innwa.com.mm">English</a></li>
@@ -664,15 +664,16 @@
                     <p class="py-4 font-semibold mb-2">Products</p>
                     <ul class="w-full flex flex-col h-full divide-y-2 ">
                         <li class="py-4" x-data="{ open: false }">
-                            <a href="#" class="w-full flex-row flex items-center h-full justify-between">
+                            <button class="w-full flex-row flex items-center h-full justify-between"
+                                @click="open = !open">
                                 <span>Category 1</span>
-                                <svg @click="open = !open" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" :class="{'transform rotate-90': open}" stroke-width="1.5"
-                                    stroke="currentColor" class="w-6 h-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    :class="{'transform rotate-90': open}" stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
-                            </a>
+                            </button>
                             <!-- drop down links -->
                             <ul class="py-4 px-2 my-2 w-full flex flex-col space-y-4" x-show="open" x-transition
                                 x-cloak>
@@ -683,7 +684,8 @@
                             </ul>
                         </li>
                         <li class="py-4" x-data="{ open: false }">
-                            <a href="#" class="w-full flex-row flex items-center h-full justify-between">
+                            <button class="w-full flex-row flex items-center h-full justify-between"
+                                @click="open = !open">
                                 <span>Parent Category 1</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" @click="open = !open" fill="none"
                                     viewBox="0 0 24 24" :class="{'transform rotate-90': open}" stroke-width="1.5"
@@ -691,7 +693,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
-                            </a>
+                            </button>
                             <ul class="py-4 px-2 my-2 w-full flex flex-col space-y-4" x-show="open" x-transition
                                 x-cloak>
                                 <li>Child Category 1</li>
@@ -701,15 +703,16 @@
                             </ul>
                         </li>
                         <li class="py-4" x-data="{ open: false }">
-                            <a href="#" class="w-full flex-row flex items-center h-full justify-between">
+                            <button class="w-full flex-row flex items-center h-full justify-between"
+                                @click="open = !open">
                                 <span>Category 1</span>
-                                <svg @click="open = !open" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" :class="{'transform rotate-90': open}" stroke-width="1.5"
-                                    stroke="currentColor" class="w-6 h-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    :class="{'transform rotate-90': open}" stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
-                            </a>
+                            </button>
                             <ul class="py-4 px-2 my-2 w-full flex flex-col space-y-4" x-show="open" x-transition
                                 x-cloak>
                                 <li><a href="https://innwa.com.mm">Brand 1</a></li>
@@ -719,15 +722,16 @@
                             </ul>
                         </li>
                         <li class="py-4" x-data="{ open: false }">
-                            <a href="#" class="w-full flex-row flex items-center h-full justify-between">
+                            <button class="w-full flex-row flex items-center h-full justify-between"
+                                @click="open = !open">
                                 <span>Category 1</span>
-                                <svg @click="open = !open" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" :class="{'transform rotate-90': open}" stroke-width="1.5"
-                                    stroke="currentColor" class="w-6 h-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    :class="{'transform rotate-90': open}" stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
-                            </a>
+                            </button>
                             <ul class="py-4 px-2 my-2 w-full flex flex-col space-y-4" x-show="open" x-transition
                                 x-cloak>
                                 <li><a href="https://innwa.com.mm">Brand 1</a></li>
@@ -737,15 +741,16 @@
                             </ul>
                         </li>
                         <li class="py-4" x-data="{ open: false }">
-                            <a href="#" class="w-full flex-row flex items-center h-full justify-between">
+                            <button class="w-full flex-row flex items-center h-full justify-between"
+                                @click="open = !open">
                                 <span>Category 1</span>
-                                <svg @click="open = !open" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" :class="{'transform rotate-90': open}" stroke-width="1.5"
-                                    stroke="currentColor" class="w-6 h-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    :class="{'transform rotate-90': open}" stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
-                            </a>
+                            </button>
                             <ul class="py-4 px-2 my-2 w-full flex flex-col space-y-4" x-show="open" x-transition
                                 x-cloak>
                                 <li><a href="https://innwa.com.mm">Brand 1</a></li>
@@ -755,15 +760,16 @@
                             </ul>
                         </li>
                         <li class="py-4" x-data="{ open: false }">
-                            <a href="#" class="w-full flex-row flex items-center h-full justify-between">
+                            <button class="w-full flex-row flex items-center h-full justify-between"
+                                @click="open = !open">
                                 <span>Category 1</span>
-                                <svg @click="open = !open" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" :class="{'transform rotate-90': open}" stroke-width="1.5"
-                                    stroke="currentColor" class="w-6 h-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    :class="{'transform rotate-90': open}" stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
-                            </a>
+                            </button>
                             <ul class="py-4 px-2 my-2 w-full flex flex-col space-y-4" x-show="open" x-transition
                                 x-cloak>
                                 <li><a href="https://innwa.com.mm">Brand 1</a></li>
@@ -773,15 +779,16 @@
                             </ul>
                         </li>
                         <li class="py-4" x-data="{ open: false }">
-                            <a href="#" class="w-full flex-row flex items-center h-full justify-between">
+                            <button class="w-full flex-row flex items-center h-full justify-between"
+                                @click="open = !open">
                                 <span>Category 1</span>
-                                <svg @click="open = !open" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" :class="{'transform rotate-90': open}" stroke-width="1.5"
-                                    stroke="currentColor" class="w-6 h-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    :class="{'transform rotate-90': open}" stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
-                            </a>
+                            </button>
                             <ul class="py-4 px-2 my-2 w-full flex flex-col space-y-4" x-show="open" x-transition
                                 x-cloak>
                                 <li><a href="https://innwa.com.mm">Brand 1</a></li>
@@ -791,15 +798,16 @@
                             </ul>
                         </li>
                         <li class="py-4" x-data="{ open: false }">
-                            <a href="#" class="w-full flex-row flex items-center h-full justify-between">
+                            <button class="w-full flex-row flex items-center h-full justify-between"
+                                @click="open = !open">
                                 <span>Category 1</span>
-                                <svg @click="open = !open" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                    viewBox="0 0 24 24" :class="{'transform rotate-90': open}" stroke-width="1.5"
-                                    stroke="currentColor" class="w-6 h-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    :class="{'transform rotate-90': open}" stroke-width="1.5" stroke="currentColor"
+                                    class="w-6 h-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                                 </svg>
-                            </a>
+                            </button>
                             <ul class="py-4 px-2 my-2 w-full flex flex-col space-y-4" x-show="open" x-transition
                                 x-cloak>
                                 <li><a href="https://innwa.com.mm">Brand 1</a></li>

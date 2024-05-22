@@ -70,7 +70,7 @@
                 </div>
                 <!-- right side large screen -->
                 <div class="w-full flex flex-row items-center pr-4 xl:justify-end">
-                    <div class="w-full flex flex-row items-center justify-end space-x-8 ml-8">
+                    <div class="w-full flex flex-row items-center justify-end lg:space-x-8 space-x-2 ml-8">
                         <button class="xl:hidden flex" @click="toggleSearchbar = !toggleSearchbar">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                 stroke="currentColor" class="w-6 h-6">
@@ -1555,11 +1555,433 @@
                 </div>
             </div>
         </div>
-        <div class="w-full rounded-lg bg-white shadow-sm flex flex-col p-12">
-            <p class="text-center font-medium text-xl">Where Else . . . ? Visit <a href="#" class="text-blue-500">Our
-                    Stores</a></p>
-        </div>
+
     </div>
+
+    <footer class="border-t-2 mt-4">
+        <div class="w-full xl:px-24 py-12 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+            <div class="w-full flex flex-col px-8 items-center">
+                <img src="https://innwa.com.mm/storage/site_logo/202312121003logo%20(2).svg" alt="logo"
+                    class="w-48 h-16">
+                <div class="flex flex-col space-y-2 mt-8 items-center">
+                    <div class="flex flex-row space-x-4 items-center">
+                        <a href="#" class="rounded-full border p-2 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                            </svg>
+                        </a>
+                        <a href="#" class="rounded-full border p-2 ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path
+                                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="rounded-full border p-2 ">
+                            <svg class="w-4 h-4" width="2048" height="2048" viewBox="0 0 2048 2048" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4382_365)">
+                                    <path
+                                        d="M1776 199.6C1725.2 152.8 1519.6 3.60004 1061.2 1.60004C1061.2 1.60004 520.799 -30.8 257.599 210.8C111.199 357.2 59.5993 572 53.9993 838C48.3993 1104 41.5993 1602.4 521.999 1737.6H522.399L521.999 1944C521.999 1944 518.799 2027.6 573.999 2044.4C640.399 2065.2 679.599 2001.6 743.199 1933.2C777.999 1895.6 825.999 1840.4 862.399 1798.4C1191.2 1826 1443.6 1762.8 1472.4 1753.6C1538.8 1732 1914.4 1684 1975.2 1185.6C2038.4 671.2 1944.8 346.4 1776 199.6ZM1831.6 1148C1780 1564 1475.6 1590.4 1419.6 1608.4C1395.6 1616 1173.6 1671.2 894.799 1653.2C894.799 1653.2 686.799 1904 621.999 1969.2C600.799 1990.4 577.599 1988.4 577.999 1946.4C577.999 1918.8 579.599 1603.6 579.599 1603.6C579.199 1603.6 579.199 1603.6 579.599 1603.6C172.399 1490.8 196.399 1066.4 200.799 844.4C205.199 622.4 247.199 440.4 371.199 318C593.999 116 1052.8 146 1052.8 146C1440.4 147.6 1626 264.4 1669.2 303.6C1812 426 1884.8 718.8 1831.6 1148ZM1275.6 824.8C1277.2 859.2 1225.6 861.6 1224 827.2C1219.6 739.2 1178.4 696.4 1093.6 691.6C1059.2 689.6 1062.4 638 1096.4 640C1208 646 1270 710 1275.6 824.8ZM1356.8 870C1360.8 700.4 1254.8 567.6 1053.6 552.8C1019.6 550.4 1023.2 498.8 1057.2 501.2C1289.2 518 1412.8 677.6 1408.4 871.2C1408 905.6 1356 904 1356.8 870ZM1544.8 923.6C1545.2 958 1493.2 958.4 1493.2 924C1490.8 598 1273.6 420.4 1010 418.4C975.999 418 975.999 366.8 1010 366.8C1304.8 368.8 1542 572.4 1544.8 923.6ZM1499.6 1316V1316.8C1456.4 1392.8 1375.6 1476.8 1292.4 1450L1291.6 1448.8C1207.2 1425.2 1008.4 1322.8 882.799 1222.8C817.999 1171.6 758.799 1111.2 713.199 1053.2C671.999 1001.6 630.399 940.4 589.999 866.8C504.799 712.8 485.999 644 485.999 644C459.199 560.8 542.799 480 619.199 436.8H619.999C656.799 417.6 691.999 424 715.599 452.4C715.599 452.4 765.199 511.6 786.399 540.8C806.399 568 833.199 611.6 847.199 636C871.599 679.6 856.399 724 832.399 742.4L784.399 780.8C759.999 800.4 763.199 836.8 763.199 836.8C763.199 836.8 834.399 1106 1100.4 1174C1100.4 1174 1136.8 1177.2 1156.4 1152.8L1194.8 1104.8C1213.2 1080.8 1257.6 1065.6 1301.2 1090C1360 1123.2 1434.8 1174.8 1484.4 1221.6C1512.4 1244.4 1518.8 1279.2 1499.6 1316Z"
+                                        fill="black" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_4382_365">
+                                        <rect width="2048" height="2048" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <a class="text-sm" href="tel:+959771966688">Hotline - 09-771966688</a>
+                        <img src="https://innwa.com.mm/storage/contact/202312120958viber.webp" alt="viber"
+                            class="w-24 h-24 shadow-sm rounded-sm">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col px-4">
+                <p class="font-bold text-lg mb-4">Support</p>
+                <ul class="space-y-4">
+                    <li>
+                        <a href="#" class="hover:text-blue-600">Stores</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-600">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-blue-600">Appointment</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex flex-col">
+                <p class="font-bold text-lg px-4 mb-4">Yangon Branches</p>
+                <div class="w-full flex flex-col space-y-2" x-data="{toggleAddress: false}">
+                    <div class="flex flex-row justify-between group hover:bg-gray-100 hover:cursor-pointer p-4"
+                        @click="toggleAddress = !toggleAddress">
+                        <p class="font-medium text-gray-800 group-hover:text-blue-700">INNWA Merchant Road Branch</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            :class="{'transform rotate-90': toggleAddress}" class="w-5 h-5 group-hover:text-blue-700">
+                            <path fill-rule="evenodd"
+                                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="px-4" x-show="toggleAddress" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-90"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-90" x-cloak
+                        class="mt-4 p-4 bg-gray-200 rounded">
+                        <div class="w-full flex flex-row">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
+                            </div>
+                            <p class="ml-2 text-sm">No.(514) Corner of Seikkanthar St & Merchant Rd, Kyauktada Tsp,
+                                Yangon. (
+                                Merchant Branch)
+                                018.385 183,398 166,398 009,01.373 488, 09.766 766 799,448 536 885 Service - 09.973 737
+                                555</p>
+                        </div>
+                        <a href="tel:+959766766799" class="flex text-sm flex-row items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>
+                            <span class="ml-2">09-766766799</span>
+                        </a>
+                        <a href="tel:+959256923664" class="flex text-sm flex-row items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288" />
+                            </svg>
+                            <span class="ml-2">09-256923664</span></a>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col space-y-2" x-data="{toggleAddress: false}">
+                    <div class="flex flex-row justify-between group hover:bg-gray-100 hover:cursor-pointer p-4"
+                        @click="toggleAddress = !toggleAddress">
+                        <p class="font-medium text-gray-800 group-hover:text-blue-700">INNWA Seikkanthar Street Branch
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            :class="{'transform rotate-90': toggleAddress}" class="w-5 h-5 group-hover:text-blue-700">
+                            <path fill-rule="evenodd"
+                                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="px-4" x-show="toggleAddress" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-90"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-90" x-cloak
+                        class="mt-4 p-4 bg-gray-200 rounded">
+                        <div class="w-full flex flex-row">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
+                            </div>
+                            <p class="ml-2 text-sm">
+                                No.(93/95) Seikkanthar St (Lower Block), Kyauktada Tsp,Yangon. (Seikkanthar Branch)
+                                09.766
+                                766 833,730 019 02 (Service - 09 885 898 799)
+                            </p>
+                        </div>
+
+                        <a href="tel:+959766766833" class="flex text-sm flex-row items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>
+                            <span class="ml-2">09-766766833</span>
+                        </a>
+                        <a href="tel:+959885898799" class="flex text-sm flex-row items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288" />
+                            </svg>
+                            <span class="ml-2">09-885898799</span></a>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col space-y-2" x-data="{toggleAddress: false}">
+                    <div class="flex flex-row justify-between group hover:bg-gray-100 hover:cursor-pointer p-4"
+                        @click="toggleAddress = !toggleAddress">
+                        <p class="font-medium text-gray-800 group-hover:text-blue-700">INNWA U Chit Maung Street Branch
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            :class="{'transform rotate-90': toggleAddress}" class="w-5 h-5 group-hover:text-blue-700">
+                            <path fill-rule="evenodd"
+                                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="px-4" x-show="toggleAddress" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-90"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-90" x-cloak
+                        class="mt-4 p-4 bg-gray-200 rounded">
+                        <div class="w-full flex flex-row">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
+                            </div>
+                            <p class="ml-2 text-sm">
+                                No.(159) U Chit Maung Road, Bahan Tsp,Yangon. (U Chit Maung Branch) 09.253 358 885,972
+                                219 955 (Service - 09.454 126 049)
+                            </p>
+                        </div>
+
+                        <a href="tel:+959253358885" class="flex text-sm flex-row items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>
+                            <span class="ml-2">09-253358885</span>
+                        </a>
+                        <a href="tel:+959454126049" class="flex text-sm flex-row items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288" />
+                            </svg>
+                            <span class="ml-2">09-454126049</span></a>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col space-y-2" x-data="{toggleAddress: false}">
+                    <div class="flex flex-row justify-between group hover:bg-gray-100 hover:cursor-pointer p-4"
+                        @click="toggleAddress = !toggleAddress">
+                        <p class="font-medium text-gray-800 group-hover:text-blue-700">INNWA North Dagon Pinlon Branch
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            :class="{'transform rotate-90': toggleAddress}" class="w-5 h-5 group-hover:text-blue-700">
+                            <path fill-rule="evenodd"
+                                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="px-4" x-show="toggleAddress" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-90"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-90" x-cloak
+                        class="mt-4 p-4 bg-gray-200 rounded">
+                        <div class="w-full flex flex-row">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
+                            </div>
+                            <p class="ml-2 text-sm">
+                                No(1173), (35) Quarter, Pinlon Road, North Dagon Tsp, Yangon (Pinlon Branch) 013 511
+                                133, 013.511 188, 09 44 111 4443
+                            </p>
+                        </div>
+
+                        <a href="tel:+959441114443" class="flex text-sm flex-row items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>
+                            <span class="ml-2">09-441114443</span>
+                        </a>
+                        <a href="tel:+9513511133" class="flex text-sm flex-row items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288" />
+                            </svg>
+                            <span class="ml-2">01-3511133</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <p class="font-bold text-lg px-4 mb-4">Mandalay Branches</p>
+                <div class="w-full flex flex-col space-y-2" x-data="{toggleAddress: false}">
+                    <div class="flex flex-row justify-between group hover:bg-gray-100 hover:cursor-pointer p-4"
+                        @click="toggleAddress = !toggleAddress">
+                        <p class="font-medium text-gray-800 group-hover:text-blue-700">INNWA 75th Branch</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            :class="{'transform rotate-90': toggleAddress}" class="w-5 h-5 group-hover:text-blue-700">
+                            <path fill-rule="evenodd"
+                                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="px-4" x-show="toggleAddress" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-90"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-90" x-cloak
+                        class="mt-4 p-4 bg-gray-200 rounded">
+                        <div class="w-full flex flex-row">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
+                            </div>
+                            <p class="ml-2 text-sm">
+                                No(9),75th St,Between 35th St and 36St. Ph/ 02.4071108,4073078,09-768887711.
+                            </p>
+                        </div>
+                        <a href="tel:+959768887711" class="flex text-sm flex-row items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>
+                            <span class="ml-2">09-768887711</span>
+                        </a>
+                        <a href="tel:+959768887711" class="flex text-sm flex-row items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288" />
+                            </svg>
+                            <span class="ml-2">09-768887711</span></a>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col space-y-2" x-data="{toggleAddress: false}">
+                    <div class="flex flex-row justify-between group hover:bg-gray-100 hover:cursor-pointer p-4"
+                        @click="toggleAddress = !toggleAddress">
+                        <p class="font-medium text-gray-800 group-hover:text-blue-700">INNWA 76th Street Branch
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            :class="{'transform rotate-90': toggleAddress}" class="w-5 h-5 group-hover:text-blue-700">
+                            <path fill-rule="evenodd"
+                                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="px-4" x-show="toggleAddress" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-90"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-90" x-cloak
+                        class="mt-4 p-4 bg-gray-200 rounded">
+                        <div class="w-full flex flex-row">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
+                            </div>
+                            <p class="ml-2 text-sm">
+                                No(B9/32), Corner of 76th Street and 27Street. Phone 09,973755888,972217482.
+                            </p>
+                        </div>
+                        <a href="tel:+95973755888" class="flex text-sm flex-row items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>
+                            <span class="ml-2">09-73755888</span>
+                        </a>
+                        <a href="tel:+95972217482" class="flex text-sm flex-row items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288" />
+                            </svg>
+                            <span class="ml-2">09-72217482</span></a>
+                    </div>
+                </div>
+                <div class="w-full flex flex-col space-y-2" x-data="{toggleAddress: false}">
+                    <div class="flex flex-row justify-between group hover:bg-gray-100 hover:cursor-pointer p-4"
+                        @click="toggleAddress = !toggleAddress">
+                        <p class="font-medium text-gray-800 group-hover:text-blue-700">INNWA 77th Street Branch
+                        </p>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                            :class="{'transform rotate-90': toggleAddress}" class="w-5 h-5 group-hover:text-blue-700">
+                            <path fill-rule="evenodd"
+                                d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="px-4" x-show="toggleAddress" x-transition:enter="transition ease-out duration-300"
+                        x-transition:enter-start="opacity-0 transform scale-90"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-300"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-90" x-cloak
+                        class="mt-4 p-4 bg-gray-200 rounded">
+                        <div class="w-full flex flex-row">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                                </svg>
+                            </div>
+                            <p class="ml-2 text-sm">
+                                No(A-7),77th St, Between 31st St and 32nd St. Ph/ 09.797780700,975591777
+                            </p>
+                        </div>
+
+                        <a href="tel:+959797780700" class="flex text-sm flex-row items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>
+                            <span class="ml-2">09-797780700</span>
+                        </a>
+                        <a href="tel:+95975591777" class="flex text-sm flex-row items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288" />
+                            </svg>
+                            <span class="ml-2">09-75591777</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="src/public/js/glide.min.js"></script>
 
     <script>

@@ -10,7 +10,7 @@ import forms from "@tailwindcss/forms";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/*.{html,js}", // Configure your template paths
+    "./*.{html,js}", // Configure your template paths
   ],
   darkMode: "class",
   theme: {
